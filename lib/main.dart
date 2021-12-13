@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:verbose_guacamole/login_page.dart';
+import 'package:verbose_guacamole/signup_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(),
+      home: SignUpPage(),
     );
   }
 }
