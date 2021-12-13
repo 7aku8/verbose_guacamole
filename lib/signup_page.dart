@@ -1,4 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:verbose_guacamole/login_page.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -150,6 +153,18 @@ class SignUpPage extends StatelessWidget {
                     )
                 ),
               ),
+            ),
+            SizedBox(height: h * 0.03),
+            RichText(
+              text: TextSpan(
+                text: 'Have an account?',
+                style: TextStyle(
+                    fontWeight: FontWeight.normal,
+                    fontSize: 16,
+                    color: Colors.grey[400]
+                ),
+                recognizer: TapGestureRecognizer()..onTap = () => Get.to(() => const LoginPage())
+              )
             ),
             SizedBox(height: h * 0.08),
             Text(
